@@ -30,20 +30,24 @@
 //          console.log("hiii"+msg+"your result is "+result)
 // }
 // msgWithclk((a,b)=>{return a+b},"Sum");
-function login(error,msg){
-    if(error){
-        console.log("Error is "+error)
-    }
-    else{
-        console.log(msg)
-    }
-}
-function loginHandler(username,password,clbk){
-    if(username=="aditya01"&&password=="12345"){
-        clbk(null,"Login Successfull")
-    }
-    else{
-        clbk("Username or password is incorrect",null)
-    }
-}
-loginHandler("aditya01","12345",login)
+// function login(error,msg){
+//     if(error){
+//         console.log("Error is "+error)
+//     }
+//     else{
+//         console.log(msg)
+//     }
+// }
+// function loginHandler(username,password,clbk){
+//     if(username=="aditya01"&&password=="12345"){
+//         clbk(null,"Login Successfull")
+//     }
+//     else{
+//         clbk("Username or password is incorrect",null)
+//     }
+// }
+// loginHandler("aditya01","12345",login)
+
+console.log("One")
+setTimeout(()=>{console.log("Two")},1000)
+console.log("Three")
