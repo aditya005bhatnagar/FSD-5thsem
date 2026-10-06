@@ -5,6 +5,7 @@ import ICardGallery from './components/ICardGallery'
 import MyState from './component/MyState'
 import College from './components/College'
 import ImageManipulation from './components/ImageManipulation';
+import MyUseEffect from './components/MyUseEffect';
 
 function App() {
     return (
