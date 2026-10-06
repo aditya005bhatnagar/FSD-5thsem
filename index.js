@@ -48,6 +48,12 @@
 // }
 // loginHandler("aditya01","12345",login)
 
-console.log("One")
-setTimeout(()=>{console.log("Two")},1000)
-console.log("Three")
+//console.log("One")
+//setTimeout(()=>{console.log("Two")},1000)
+//console.log("Three")
+
+function ping(){
+    container.appendChild(h1);
+    Image.src='urlofimage';
+    Image.setAttribute
+}
