@@ -1,25 +1,25 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '.assets/vite.svg'
 import './App.css'
-import ICardGallery from './components/ICardGallery'
-import MyState from './component/MyState'
-import College from './components/College'
-import ImageManipulation from './components/ImageManipulation';
-import MyUseEffect from './components/MyUseEffect';
+import { BrowserRouter, Route, Routes } from 'react-router'
+import FetchProducts from './components/FetchProducts'
+import Home from './components/Home'
+import Login from './components/Login'
+import Registration from './components/Registration'
 
 function App() {
     return (
-        <div style={{ border: '2px solid red' }}>
-            {/* 
-            <ICardGallery />
-            <MyState />
-            <College />
-            */}
-
-            <ImageManipulation />
+        <div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/registration" element={<Registration />} />
+                <Route path="/fetchproducts" element={<FetchProducts />} />
+                <Route path="/dashboard" element={<h2>Dashboard</h2>} />
+            </Routes>
+        </BrowserRouter>
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
 
